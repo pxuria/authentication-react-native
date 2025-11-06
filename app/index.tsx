@@ -1,5 +1,6 @@
 import AddPlace from '@/components/AddPlace';
 import AllPlaces from '@/components/AllPlaces';
+import Map from '@/components/Map';
 import IconButton from '@/components/ui/IconButton';
 import { Colors } from '@/constants/styles';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -33,6 +34,12 @@ export default function App() {
         <Stack.Screen
           name="AddPlace"
           component={AddPlace}
+          options={{
+            title: 'Add a new Place'
+          }} />
+        <Stack.Screen
+          name="Map"
+          component={Map}
           options={{
             title: 'Add a new Place'
           }} />
